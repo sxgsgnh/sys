@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#test="mate"
+echo $1
+if [ -z $1 ]
+then
+    echo "invalid value"
+    exit 1
+fi
+
+if [ $1 = "mate" ]
+then
+    sed -i "/exec.*dbus-launch.*/s//exec dbus-launch mate-session/" ~/.xinitrc
+elif [ $1 = "sgnh" ]
+then
+    sed -i "/exec.*dbus-launch.*/s::exec dbus-launch \$HOME/software/stumpwm/bin/stumpwm:" ~/.xinitrc
+else
+    echo "invalid value"
+    exit 1
+fi
+
+startx

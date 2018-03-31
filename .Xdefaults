@@ -1,0 +1,10 @@
+XTerm*inputMethod: fcitx
+XTerm.vt100.scrollBar: false
+XTerm.vt100.scrollBar.width: 8
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.locale: True
+XTerm*faceName: TerminusTTF-Bold:antialias=true:pixelsize=18
+xterm*xftAntialias: True
+xterm*cjkWidth: false
+xterm*faceNameDoublesize: YaHei Consolas Hybrid:pixelsize=18:antialias=true
+xterm*selectToClipboard: true
